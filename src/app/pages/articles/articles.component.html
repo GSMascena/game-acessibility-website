@@ -1,0 +1,8 @@
+<app-article-small-card
+  *ngFor="let article of articleDatabase"
+  routerLink="{{article.articleId}}"
+  articleCardImg="{{article.articleImg}}"
+  articleCardTitle="{{article.articleTitle}}"
+  articleCardDescription="{{article.articleDescription}}"
+  >
+</app-article-small-card>

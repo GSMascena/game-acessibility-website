@@ -1,0 +1,8 @@
+.element {
+  margin: 1rem 0;
+}
+
+.img-element__container > img {
+  width: 100%;
+  height: auto;
+}

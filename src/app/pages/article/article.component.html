@@ -1,0 +1,9 @@
+<div class="article-page">
+  <div class="article-content">
+    <app-article-element
+    *ngFor="let articleElement of articleElements"
+    elementType="{{articleElement.elementType}}"
+    elementContent="{{articleElement.elementContent}}"
+  ></app-article-element>
+  </div>
+</div>

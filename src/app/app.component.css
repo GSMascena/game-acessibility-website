@@ -1,0 +1,17 @@
+.page-content {
+  padding: 2rem 0 ;
+
+  background-color: black;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+footer {
+  bottom:0;
+  background-color:rgb(78, 78, 78);
+  width:100%;
+}
