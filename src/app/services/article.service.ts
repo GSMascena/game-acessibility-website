@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { article, articleElement } from '../data/article';
+import { article, htmlElement } from '../data/article';
 import { articleDatabase } from '../data/articleDatabase';
 
 @Injectable({
@@ -16,12 +16,12 @@ export class ArticleService {
     return this.articleDatabase
   }
 
-  getArticleContent(id: number) : articleElement[] {
+  getArticleContent(id: number) : htmlElement[] {
     console.log(id)
-    const article = this.articleDatabase.filter(article => article.articleId = id)
+    const article = this.articleDatabase.filter(article => article.articleId == id)
     if (article.length > 0) {
       console.log(id, article[0])
-      return article[0].articleElements
+      return article[0].articleHtmlElements
     };
     return [];
   }

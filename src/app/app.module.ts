@@ -10,6 +10,9 @@ import { ArticleComponent } from './pages/article/article.component';
 import { ArticleElementComponent } from './components/article-element/article-element.component';
 import { ArticleSmallCardComponent } from './components/article-small-card/article-small-card.component';
 import { ArticlesComponent } from './pages/articles/articles.component';
+import { GameCardComponent } from './components/game-card/game-card.component';
+import { GamesComponent } from './pages/games/games.component';
+import { GameComponent } from './pages/game/game.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { ArticlesComponent } from './pages/articles/articles.component';
     ArticleComponent,
     ArticleElementComponent,
     ArticleSmallCardComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    GameCardComponent,
+    GamesComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,

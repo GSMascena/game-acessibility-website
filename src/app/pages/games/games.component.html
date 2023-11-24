@@ -1,0 +1,7 @@
+<div class="games-card__container">
+  <app-game-card
+  *ngFor="let game of gameDatabase"
+  routerLink="{{game.gameId}}"
+  gameTitle="{{game.gameTitle}}"
+  gameCover="{{game.gameCover}}"></app-game-card>
+</div>

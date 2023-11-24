@@ -1,12 +1,11 @@
-export type articleElement = {
-  elementType: string,
-  elementContent: string
-}
+import { htmlElement } from "./htmlElement"
 
 export type article = {
   articleId : number,
   articleImg: string,
   articleTitle : string,
   articleDescription : string,
-  articleElements: articleElement[]
+  articleHtmlElements: htmlElement[]
 }
+export { htmlElement }
+

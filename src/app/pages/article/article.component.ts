@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { articleElement } from 'src/app/data/article';
+import { htmlElement } from 'src/app/data/article';
 import { ArticleService } from 'src/app/services/article.service';
 import { IntParserService } from 'src/app/services/int-parser.service'
 
@@ -10,7 +10,7 @@ import { IntParserService } from 'src/app/services/int-parser.service'
   styleUrls: ['./article.component.css']
 })
 export class ArticleComponent {
-  articleElements: articleElement[] = []
+  htmlElements: htmlElement[] = []
 
   constructor (
     private route: ActivatedRoute,
@@ -24,6 +24,6 @@ export class ArticleComponent {
 
     const parsedInt = this.intParser.tryParseInt(paramId)
 
-    this.articleElements = this.articleService.getArticleContent(parsedInt)
+    this.htmlElements = this.articleService.getArticleContent(parsedInt)
   }
 }
