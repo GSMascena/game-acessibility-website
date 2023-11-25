@@ -20,6 +20,10 @@ export const articleDatabase : article[] = [
                 elementType : 'p',
                 elementContent : 'Uma revolução de acessibilidade'
             },
+            {
+              elementType : 'youtubeVideo',
+              elementContent : 'QIZ9aZD6vs0'
+          },
         ]
     }
 ]
